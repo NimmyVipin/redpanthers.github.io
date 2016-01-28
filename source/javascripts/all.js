@@ -2,7 +2,7 @@
 //= require libs/bootstrap.min
 //= require libs/github
 //= require libs/isotope.pkgd.min
-
+//= require libs/_loadash
 //= require main
 
 //= require angular-libs/angular.min
@@ -15,9 +15,10 @@
 
 //= require angular-site
 //= require filter/string-filter
-//= require config
 //= require service/github-api.js
+//= require service/rubygem-api
 //= require controller/homeController
 //= require controller/headerController
 //= require controller/teamController
+//= require controller/contributionController
 //= require directive/commonBootstrapDirectives
