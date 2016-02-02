@@ -12,15 +12,18 @@ window.RedPanther.config(['$stateProvider','$urlRouterProvider',function($stateP
   .state('home',{
     url:'/',
     views:{
-      "page":{
-        templateUrl:'javascripts/template/home/index.html',
-        controller:'homeController'
+      "landing":{
+        templateUrl:"javascripts/template/landing/landing.html",
+        controller: 'homeController'
       }
     }
   })
   .state('team',{
     url:'/team',
     views:{
+      "sidebar":{
+        templateUrl: 'javascripts/template/sidebar/sidebar.html'
+      },
       "page":{
         templateUrl: "javascripts/template/home/team.html",
         controller: "teamController"
@@ -30,25 +33,36 @@ window.RedPanther.config(['$stateProvider','$urlRouterProvider',function($stateP
   .state( 'member',{
     url:'/team/:username',
     views:{
+      "sidebar":{
+        templateUrl: 'javascripts/template/sidebar/sidebar.html',
+
+      },
       "page":{
         templateUrl: "javascripts/template/home/member.html",
         controller: "teamController"
       }
     }
   })
-  .state('about',{
-    url:'/about',
-    views:{
-      "page": {
-        templateUrl: "javascripts/template/home/about.html",
-      }
-    }
-  })
   .state('contributions',{
     url:'/contributions',
     views:{
+      "sidebar":{
+        templateUrl: 'javascripts/template/sidebar/sidebar.html'
+      },
       "page":{
         templateUrl:"javascripts/template/home/contributions.html",
+        controller: "contributionController"
+      }
+    }
+  })
+  .state('source-contributions',{
+    url:'/contributions/:source',
+    views:{
+      "sidebar":{
+        templateUrl: 'javascripts/template/sidebar/sidebar.html'
+      },
+      "page":{
+        templateUrl:"javascripts/template/home/source.html",
         controller: "contributionController"
       }
     }
@@ -56,6 +70,9 @@ window.RedPanther.config(['$stateProvider','$urlRouterProvider',function($stateP
   .state('join',{
     url:'/join',
     views:{
+      "sidebar":{
+        templateUrl: 'javascripts/template/sidebar/sidebar.html'
+      },
       "page":{
         templateUrl: "javascripts/template/join/join.html",
       }
