@@ -75,6 +75,7 @@ window.RedPanther.config(['$stateProvider','$urlRouterProvider',function($stateP
       },
       "page":{
         templateUrl: "javascripts/template/join/join.html",
+        controller:'homeController'
       }
     }
   });

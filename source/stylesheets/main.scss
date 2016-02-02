@@ -36,15 +36,15 @@
     a{
       display: block;
       // background: #333;
-      color: #777;
+      color: lighten(#1b333f,10%);
       margin: 0 0 5px;
       padding: 10px 15px;
       text-transform: uppercase;
-      text-shadow: -1px -1px 0 #595959;
+      text-shadow: -1px -1px 0 darken(#1b333f,20%);
       text-decoration: none;
       &:hover{
         text-decoration: none;
-        background: #222;
+        background: darken(#1b333f,5%);
       }
     }
   }
@@ -394,7 +394,7 @@ $team-member-width: 100%;
       h1{
         margin-top: -40px;
         color: #fff;
-        font-size: 64px;
+        font-size: 58px;
         position: relative;
         padding: 10px 0 10px 20px;
         margin-bottom: 40px;
@@ -502,16 +502,17 @@ $team-member-width: 100%;
     color: #fff;
     text-align: center;
     .date-month{
-      font-size: 24px;
+      font-size: 20px;
+      letter-spacing: 2px;
       position: relative;
-      top: 12px;
+      top: 15px;
       font-weight: bold;
     }
     .date-rem{
       color: #ccc;
-      font-size: 12px;
+      font-size: 11px;
       position: relative;
-      top: 5px;
+      top: 10px;
     }
     &.code{
       span{
@@ -583,4 +584,11 @@ $team-member-width: 100%;
       border-color: #e2574c;
     }
   }
+}
+.btn-join{
+  margin-top: 30px;
+  padding: 12px 40px;
+  width: 240px;
+  font-size: 24px;
+  font-weight: normal;
 }
