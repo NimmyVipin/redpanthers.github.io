@@ -36,11 +36,10 @@
     a{
       display: block;
       // background: #333;
-      color: lighten(#1b333f,10%);
+      color: #999;
       margin: 0 0 5px;
       padding: 10px 15px;
       text-transform: uppercase;
-      text-shadow: -1px -1px 0 darken(#1b333f,20%);
       text-decoration: none;
       &:hover{
         text-decoration: none;
